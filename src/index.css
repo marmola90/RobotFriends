@@ -6,14 +6,19 @@ body {
 }
 
 div::-webkit-scrollbar {
-  width: 1em;
+  width: 0px;
+  height: 0px;
 }
 
-div::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 }
 
-div::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
 background-color: rgb(151, 43, 0);
 outline: 1px solid rgb(192, 153, 46);
+}
+
+body::-webkit-scrollbar {
+  width: 1em; 
 }
