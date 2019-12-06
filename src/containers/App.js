@@ -15,7 +15,7 @@ class App extends Component {
     }
 
     componentDidMount(){
-        fetch('https://jsonplaceholder.typicode.com/users')
+        fetch('https://raw.githubusercontent.com/marmola90/JsonDBDemo/master/users')
             .then(response => response.json())
             .then(users => this.setState({robots:users}));
     }
@@ -34,7 +34,7 @@ class App extends Component {
              <h1 className='tc'>Loading...</h1> :
              (
                 <div className='tc'>
-                    <h1 className='f1'>RobotFriends</h1>
+                    <h1 className='f1'>DIT TEAM</h1>
                     <SearchBox searchChange={this.onSearchChange} />
                     <Scroll>
                         <ErrorBoundry>
