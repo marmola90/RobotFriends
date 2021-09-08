@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Card = ({name,email,puesto,id}) => {
+const Card = ({name,email,puesto,cumpleaños,id}) => {
     return(
         <div className='tc bg-orange dib br3 pa3 ma2 grow bw2 shadow-5'>
             <img alt='robots' src={`https://robohash.org/${id}?200x200`} />
@@ -8,6 +8,7 @@ const Card = ({name,email,puesto,id}) => {
                 <h2>{name}</h2>
                 <p>{email}</p>
                 <p><b>Cargo: </b>{puesto}</p>
+                <p><b>Cumpleaños:</b> {cumpleaños}</p>
             </div>
         </div>
     );
